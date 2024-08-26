@@ -4,6 +4,7 @@
   "version": "1.0",
   "description": "Helps negotiate on AirBnB",
   "permissions": ["activeTab"],
+  "host_permissions": ["https://*.airbnb.com/*"],
   "action": {
     "default_popup": "popup.html"
   },
