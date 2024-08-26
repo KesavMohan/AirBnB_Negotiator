@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "AirBnB Negotiator",
+  "version": "1.0",
+  "description": "Helps negotiate on AirBnB",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.airbnb.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
